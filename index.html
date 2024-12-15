@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Animation and Illustration Portfolio Website</title>
+  <style>
+    
+    body {
+      background-color: #FFF5D1;
+      overflow-x: hidden;
+      max-width: 100% ;
+      height: auto
+    }
+
+    @font-face {
+      font-family: AlbaMatter;
+      src: url('fonts bs/Alba Matter.TTF');
+    }
+
+    @font-face {
+      font-family: MelAround;
+      src: url('fonts bs/Melaround-Regular.otf');
+    }
+
+    @font-face {
+      font-family: Europe Underground;
+      src: url('fonts bs/EuropeUnderground_light.ttf');
+    }
+
+    @font-face {
+      font-family: SouciSansNf;
+      src: url('fonts bs/SouciSansNF.ttf');
+    }
+
+    @font-face {
+      font-family: TypoRoundRegular;
+      src: url('fonts bs/Typo_Round_Regular_Demo.otf');
+    }
+
+    @font-face {
+      font-family: TypoRoundLight;
+      src: url('fonts bs/Typo_Round_Light_Demo.otf');
+    }
+
+    @font-face {
+      font-family: WidaRound;
+      src: url('fonts bs/Wida Round Demo.otf');
+    }
+
+    @font-face {
+      font-family: WidaRoundLight;
+      src: url('fonts bs/Wida Round Light Demo.otf');
+    }
+
+    .card-hover {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card-hover img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s;
+    }
+
+    .card-hover .card-body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .card-hover:hover .card-body {
+      opacity: 1;
+    }
+
+    .card-hover:hover img {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-family: AlbaMatter, Alba Matter;
+      font-size: 80px;
+      color: #FFF5D1;
+      text-shadow: 1px black;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: MelAround, Melaround-Regular;
+      font-size: 40px;
+      color: #D66853;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 4%;
+    }
+    container-fluid full-width-section{
+        width: 1199px;
+    }
+    .custom-link { color: inherit; text-decoration: none; font-weight: normal; }
+  </style>
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Hero Section -->
+  <section class="container-fluid full-width-section" style="background-color:  #D66853 ;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 style="padding-top: 4%;font-size: 100px;">Kalyani Ranade</h1>
+          <p style="color: #FFD394; text-align: center;">Illustration I Art I Animation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #D66853 ;;">
+    <div class="container-fluid">
+      <a style="background-color:  #D66853 ;;color: #FFF5D1;font-family: TypoRoundRegular, Typo_Round_Regular_Demo;font-size: medium;" class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a style="background-color:  #D66853 ;color: #FFF5D1;font-family: TypoRoundRegular, Typo_Round_Regular_Demo;" class="nav-link active" href="http://127.0.0.1:5500/portfolioworksect.html" target="_blank">Work</a>
+          </li>
+          <li class="nav-item">
+            <a style="background-color: #D66853 ;color: #FFF5D1;font-family: TypoRoundRegular, Typo_Round_Regular_Demo;" class="nav-link" href=http://127.0.0.1:5500/aboutsect.html# target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a style="background-color:  #D66853 ;color:#FFF5D1;font-family: TypoRoundRegular, Typo_Round_Regular_Demo;" class="nav-link" href="#C4">Contact</a>
+          </li>
+       
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-12 text-center " >
+      <img src="images/gif.ponyo.gif" class="img-fluid" alt="showreel" style="width:70%; height: auto;padding: 20px; padding-bottom:80px ;">
+    </div>
+  </div>
+
+
+
+   <h1 style="background-color:#FFF1BE; padding: 2%; color:  #BF3E30; font-size: 60px;">Work</h1>
+  </div>
+<!-- Illustration Section -->
+<div class="container mt-5">
+    <h2>Illustration</h2>
+    <div class="row">
+      <!-- Illustration Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.a.jpg" class="card-img-top" alt="Project One">
+          <div class="card-body">
+            <a href="http://127.0.0.1:5500/IllustrationRedirection.html" target="_blank" class="custom-link">
+            <p class="card-text" style="text-align: centre;"><b> Ponyo: Running over Waves</b>
+<br>
+                The artwork captures Ponyo's transformation and underwater adventures, showcasing the beauty and mystery of the ocean.</p></a>
+          </div>
+        </div>
+      </div>
+      <!-- Illustration Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.b.jpg" class="card-img-top" alt="Project Two">
+          <div class="card-body">
+            <p class="card-text"><b>Kiki's Delivery Service:</b>
+<br>
+               A concept illustration of Kiki in a picture book style </p>
+          </div>
+        </div>
+      </div>
+      <!-- Illustration Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.c.jpg" class="card-img-top" alt="Project Three">
+          <div class="card-body">
+            <p class="card-text"><b>My Neighbor Totoro: Family </b>
+<br>
+                This illustration depicts the heartwarming relationship between Mei, Satsuki, and their father. </div>
+        </div>
+      </div>
+      <!-- Illustration Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.ill.jpg" class="card-img-top" alt="Project Four">
+          <div class="card-body">
+            <p class="card-text"><b>Character sketch:  Sōsuke</b>
+            </div>
+        </div>
+      </div>
+      <!-- Illustration Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.ill2.jpg" class="card-img-top" alt="Project Five">
+          <div class="card-body">
+            <p class="card-text"><b>Ponyo: Pose sheets</b>
+            <br>
+         Sketches showing the character in various poses and actions, such as running, jumping, or sitting.
+Useful for understanding the character's body language and movement.</div>
+          
+
+        </div>
+      </div>
+      <!-- Illustration Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.k.png" class="card-img-top" alt="Project Six">
+          <div class="card-body">
+            <p class="card-text"><b>Seita and Setsuko </b></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Art Section -->
+<div class="container mt-5">
+    <h2>Art</h2>
+    <div class="row">
+      <!-- Art Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/art 1.jpg" class="card-img-top" alt="Project One">
+          <div class="card-body">
+            <p class="card-text"><b>Ghibli village:</b>
+                <br>
+                The drawing of a picturesque villabe in the Studio Ghibli art style
+            </div>
+        </div>
+      </div>
+      <!-- Art Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.e.jpg" class="card-img-top" alt="Project Two">
+          <div class="card-body">
+            <p class="card-text"><b>Kiki's Delivery Service: Flying High</b><br>
+
+                The illustration showcases Kiki's determination and independence as she soars above the city on her broomstick, delivering hope and dreams.</div>
+        </div>
+      </div>
+      <!-- Art Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/art 3.jpg" class="card-img-top" alt="Project Three">
+          <div class="card-body">
+            <a href="http://127.0.0.1:5500/ArtRedirection.html" target="_blank" class="custom-link">
+            <p class="card-text"><b>Concept sketch:The Enchanted Castle </b>
+                <br>
+                from
+                Howl's moving Castle 
+            </div></a>
+        </div>
+      </div>
+      <!-- Art Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.h.jpeg" class="card-img-top" alt="Project Four">
+          <div class="card-body">
+            <p class="card-text"><b>Grave of the Fireflies: Catching Fireflies</b>
+             <br>This tender scene captures the siblings, Seita and Setsuko, in a moment of fleeting joy as they catch fireflies. Surrounded by the soft glow of the fireflies in the twilight, the two children find a brief respite from their harsh reality. </div>
+        </div>
+      </div>
+      <!-- Art Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/art 6.jpg" class="card-img-top" alt="Project Five">
+          <div class="card-body">
+            <p class="card-text"><b>Lying in lush Forests</b></div>
+        </div>
+      </div>
+      <!-- Art Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/art 5.jpg"  class="card-img-top" alt="Project Six">
+          <div class="card-body">
+            <p class="card-text"><b>Running Home:</b>
+                <br>
+                Chihiro returns home from the Spirit World
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Animation Section -->
+<div class="container mt-5">
+    <h2>Animation</h2>
+    <div class="row">
+      <!-- Animation Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/a.gif" class="card-img-top" alt="Project One">
+          <div class="card-body">
+            <p class="card-text">Ponyo</p>
+          </div>
+        </div>
+      </div>
+      <!-- Animation Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/b.gif" class="card-img-top" alt="Project Two">
+          <div class="card-body">
+            <p class="card-text">Kiki's Delivery Service</p>
+          </div>
+        </div>
+      </div>
+      <!-- Animation Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/c.gif" class="card-img-top" alt="Project Three">
+          <div class="card-body">
+            <p class="card-text">Seita and Setsuko</div>
+        </div>
+      </div>
+      <!-- Animation Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/ponyo.g.gif" class="card-img-top" alt="Project Four">
+          <div class="card-body">
+            <p class="card-text">Ponyo and Sosuke</p>
+          </div>
+        </div>
+      </div>
+      <!-- Animation Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/j.gif" class="card-img-top" alt="Project Five">
+          <div class="card-body">
+            <p class="card-text">Kiki and Jiji.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Animation Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/g.gif" class="card-img-top" alt="Project Six">
+          <div class="card-body">
+            <p class="card-text">Totoro</p>
+          </div>
+        </div>
+      </div>
+      <!-- Animation Card 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/k.gif" class="card-img-top" alt="Project Seven">
+          <div class="card-body">
+            <p class="card-text">Totoro and Mei </p>
+          </div>
+        </div>
+      </div>
+      <!-- Animation Card 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/i.gif" class="card-img-top" alt="Project Eight">
+          <div class="card-body">
+            <p class="card-text">No Face</p>
+          </div>
+        </div>
+      </div>
+      <!-- Animation Card 9 -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-hover">
+          <img src="images/d.gif" class="card-img-top" alt="Project Nine">
+          <div class="card-body">
+            <p class="card-text">Ponyo and Sosuke</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Carousel Section -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <!-- Carousel Column -->
+       <h2>Upcoming Project</h2>
+      <div class="col-md-10" style="padding-bottom: 5%;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/car a.jpg" class="d-block w-100" alt="First Slide">
+              <div class="carousel-caption d-none d-md-block">
+               
+                <p style="color: rgb(255, 255, 255);font-size: 20px;"><br> <br>We are excited to announce our latest project, "The Boy and the Heron"!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/car b.jpeg" class="d-block w-100" alt="Second Slide">
+              <div class="carousel-caption d-none d-md-block">
+               
+                <p style="color: rgb(255, 255, 255);font-size: 20px;">Join us on a magical journey as we bring this enchanting Studio Ghibli adventure to life.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/car c.png" class="d-block w-100" alt="Third Slide">
+              <div class="carousel-caption d-none d-md-block">
+             
+                <p style="color: black; font-size: 20px;"><br>Stay tuned for more updates and behind-the-scenes glimpses!
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- About Section -->
+<div class="container-fluid full-width-section" >
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 style=" color: #D66853; padding: 5%; font-size: 150px;">About</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="padding-left: 5%;padding-right: 5%;">
+        <p style="font-family: TypoRoundLight, Typo_Round__Light_Demo; text-align: center;font-size: 30px;">My name is Kalyani, and I am currently a second-year student with a strong focus on communication, art, and animation, My passion for storytelling and illustration fuels my drive to explore new creative avenues, I am committed to enhancing my existing skills while continuously learning new techniques and tools to further my growth as an artist, Collaboration with fellow creatives excites me, as I believe it fosters innovation and brings unique perspectives to projects, Through dedication and hard work, I aim to refine my craft and share my love for visual storytelling with others,
+          <Br>
+            <Br>
+          Contact me on:
+        </p>
+      </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="icons mt-5" style="background-color:   #D66853 ;padding: 2%;margin-bottom: 10%;" id="C4">
+      <div class="container text-center">
+        <div class="row align-items-end">
+          <div class="col">
+            <a href="url">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style="color:  #FFF5D1;">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://mail.google.com/mail/u/1/#inbox "target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="color:  #FFF5D1;">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.linkedin.com/in/kalyani-ranade-62a2972b4/"target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" style="color: #FFF5D1;">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+  </html>
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

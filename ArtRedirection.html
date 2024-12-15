@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Animation and Illustration Portfolio Website</title>
+    <style>
+    body {
+        background-color: #FFF5D1;
+        overflow-x: hidden;
+      }
+  
+      @font-face {
+        font-family: AlbaMatter;
+        src: url('fonts bs/Alba Matter.TTF');
+      }
+  
+      @font-face {
+        font-family: MelAround;
+        src: url('fonts bs/Melaround-Regular.otf');
+      }
+  
+      @font-face {
+        font-family: Europe Underground;
+        src: url('fonts bs/EuropeUnderground_light.ttf');
+      }
+  
+      @font-face {
+        font-family: SouciSansNf;
+        src: url('fonts bs/SouciSansNF.ttf');
+      }
+  
+      @font-face {
+        font-family: TypoRoundRegular;
+        src: url('fonts bs/Typo_Round_Regular_Demo.otf');
+      }
+  
+      @font-face {
+        font-family: TypoRoundLight;
+        src: url('fonts bs/Typo_Round_Light_Demo.otf');
+      }
+  
+      @font-face {
+        font-family: WidaRound;
+        src: url('fonts bs/Wida Round Demo.otf');
+      }
+  
+      @font-face {
+        font-family: WidaRoundLight;
+        src: url('fonts bs/Wida Round Light Demo.otf');
+      }
+  
+      .card-hover {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+  
+      .card-hover img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.2s;
+      }
+  
+      .card-hover .card-body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+  
+      .card-hover:hover .card-body {
+        opacity: 1;
+      }
+  
+      .card-hover:hover img {
+        transform: scale(1.1);
+      }
+  
+      h1 {
+        font-family: AlbaMatter, Alba Matter;
+        font-size: 80px;
+        color: #FFF5D1;
+        text-shadow: 1px black;
+        text-align: center;
+      }
+  
+      h2 {
+        font-family: MelAround, Melaround-Regular;
+        font-size: 40px;
+        color: #D66853;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 4%;
+      }
+      container-fluid full-width-section{
+          width: 1199px;
+      }
+    </style>
+  </head>
+  
+  <body>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg" style="background-color: #D66853 ;;">
+        <div class="container-fluid">
+          <a style="background-color:  #D66853 ;;color: #FFF5D1;font-family: TypoRoundRegular, Typo_Round_Regular_Demo;font-size: medium;" class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a style="background-color:  #D66853 ;color: #FFF5D1;font-family: TypoRoundRegular, Typo_Round_Regular_Demo;" class="nav-link active" href="http://127.0.0.1:5500/portfolioworksect.html" target="_blank">Work</a>
+              </li>
+              <li class="nav-item">
+                <a style="background-color: #D66853 ;color: #FFF5D1;font-family:  TypoRoundRegular, Typo_Round_Regular_Demo;" class="nav-link" href=http://127.0.0.1:5500/aboutsect.html# target="_blank">About</a>
+              </li>
+              <li class="nav-item">
+                <a style="background-color:  #D66853 ;color:#FFF5D1;font-family:  TypoRoundRegular, Typo_Round_Regular_Demo;" class="nav-link" href="#C6">Contact</a>
+              </li>
+           
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="images/art 3.jpg" alt="showreel" class="img-fluid" style="padding-top: 2%;">
+                <h3 style="font-family: TypoRoundRegular, Typo_Round__Regular_Demo; font-size: 55px; color: #D66853; margin-top: 10%;">HOWL'S MOVING CASTLE</h3>
+                <h4 style="font-family: WidaRound, WidaRoundfont; font-size: 25px;color:#7d2a21; text-align: centre; margin-top: 5%; margin-bottom: 5%; padding-left: 5%; padding-right: 5%;">The illustration of the enchanting castle in "Howl's Moving Castle" beautifully captures its whimsical design and mechanical intricacies. The castle, with its towering spires and cobbled-together structure, embodies the magic and mystery that define Howl's world. Its seemingly haphazard construction, complete with mismatched windows and doors, reflects Howl's free-spirited and unpredictable nature. As it moves across diverse landscapes—from lush green meadows to misty mountain ranges—the castle's charm and fantastical elements are vividly rendered in Studio Ghibli’s signature hand-drawn style. This illustration not only showcases the castle's uniqueness but also emphasizes the film's themes of wonder and discovery, drawing audiences into a realm where the extraordinary is commonplace and imagination knows no bounds.
+                </div>
+        </div>
+        <div class="row text-center my-5">
+            <div class="col-md-6">
+                <p style="font-family: Wida Round Italic Demo, Wida Round Italic Demo; color: #D66853; font-size: medium; font-weight: 400;">
+                    Director: Hayao Miyazaki <br>
+Producer: Toshio Suzuki<br>
+Animation Studio: Studio Ghibli<br>
+Character Design: Yoshifumi Kondo
+            </div>
+            <div class="col-md-6">
+                <p style="font-family: Wida Round Italic Demo, Wida Round Italic Demo; color: #D66853; font-size: medium; font-weight: 400;">
+                    Art Director: Yôji Takeshige<br>
+Music Composer: Joe Hisaishi<br>
+Animator: Kitarô Kôsaka <br>
+Release Year: 2004
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer class="icons mt-5"id="C6"> 
+      <div class="container text-center"> 
+          <div class="row align-items-end"> 
+              <div class="col">
+              <a href="url"> 
+              
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style="color: #BF3E30;">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+               </svg>
+              </a> 
+          </div> 
+          
+          <div class="col">
+              <a href="https://mail.google.com/mail/u/0/#inbox"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="color: #BF3E30;">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/> 
+                  </svg>
+              </a> 
+          </div> 
+          <div class="col"><a href="url"> 
+              <svg xmlns="https://www.linkedin.com/in/kalyani-ranade-62a2972b4/" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" style="color: #BF3E30;">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/> 
+              </svg>
+          </a> 
+      </div> 
+  </div> 
+</div> 
+</footer> 
+</div> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>
+</body>
+</html>   
